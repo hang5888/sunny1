@@ -1,0 +1,45 @@
+.navstyle{
+    list-style-type: none;
+    margin: 0;
+padding: 0;
+    overflow: hidden;
+}
+.active {
+    background-color: #FF5C26!important;
+    color: white !important;
+    border-radius: 4px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    color: black;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color:yellow;
+    color: black;
+    border-radius: 4px;
+}
+
+.footer{
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    /* 設定footer絕對位置在底部 */
+    /*position: absolute;*/
+    bottom: 0;
+    /* 展開footer寬度 */
+    width: 100%;
+}
+span{
+    color: green;
+    font-weight: bolder;
+    padding-right: 50px;
+}
