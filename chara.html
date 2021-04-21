@@ -11,6 +11,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.css"
+    integrity="sha512-3icgkoIO5qm2D4bGSUkPqeQ96LS8+ukJC7Eqhl1H5B2OJMEnFqLmNDxXVmtV/eq5M65tTDkUYS/Q0P4gvZv+yA=="
+    crossorigin="anonymous" />
 </head>
 
 <body>
@@ -25,7 +28,7 @@
         <!-- Navigation -->
         <ul class="navstyle h4">
             <li >
-                <a href="./news.html">最新消息</a>
+                <a class="" href="./news.html">最新消息</a>
             </li>
 
             <li class="nav-item">
@@ -49,7 +52,7 @@
             </li>
 
             <li>
-                <a class="" href="./AdmissionsInformation.html">招生相關</a>
+                <a  href="./AdmissionsInformation.html">招生相關</a>
             </li>
 
             <li>
@@ -62,6 +65,11 @@
         </ul>
         <!-- End Navigation -->
         <hr>
+        <!-- 頁面路徑 -->
+        <nav class="breadcrumb">
+            <a class="breadcrumb-item" href="index.html">Home</a>
+            <span class="breadcrumb-item">教學特色</span>
+        </nav>
         <!-- Card groups -->
         <div class="card-group my-4">
             <div class="col-lg-4">
@@ -98,14 +106,18 @@
             </div>
         </div>
         <!-- End Card groups -->
+        
+        <i class="fas fa-cog fa-spin" style="font-size:80px"></i>
+        <i class="fas fa-cog fa-spin" style="font-size:80px"></i>
+        <i class="fas fa-cog fa-spin" style="font-size:80px"></i>
+        <h2>網站建置中</h2>
     </div>
     <!-- End Container -->
     <br>
-    <div class="footer alert-info">
-        <p style="margin: auto;"><a href="about.html">關於我們</a>&nbsp;&nbsp;電話:02-23677468&nbsp;&nbsp;&nbsp;&nbsp;地址:台北市中正區永春街131巷2號之2</p>
+    <div class="footer "style="position: absolute">
+        <p style="margin: auto;"><a
+                href="./about.html">關於我們</a>&nbsp;&nbsp;電話:02-23677468&nbsp;&nbsp;&nbsp;&nbsp;地址:台北市中正區永春街131巷2號之2</p>
     </div>
-
-    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -121,6 +133,27 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>

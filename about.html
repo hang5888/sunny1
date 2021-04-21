@@ -118,8 +118,8 @@
 
 
     </div>
-
-    <div class="footer alert-info">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="footer ">
         <p style="margin: auto;"><a
                 href="./about.html">關於我們</a>&nbsp;&nbsp;電話:02-23677468&nbsp;&nbsp;&nbsp;&nbsp;地址:台北市中正區永春街131巷2號之2</p>
     </div>
@@ -136,6 +136,27 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/bed3c8a2a0.js" crossorigin="anonymous"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>

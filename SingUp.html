@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #F0FFFF">
+<body >
     <div class="container">
         <div style="text-align: center;">
             <img src="img/logo.png" alt="" width="100">
@@ -94,10 +94,14 @@
                 <div class="form-group" style="margin-left: 210pt; margin-top: 20pt;">
                     <label for="">報名班級</label>
                     <select type="text" name="" id="" class="form-control" placeholder="" aria-describedby="helpId">
-                        <option>向日葵幼幼班</option>
-                        <option>向日葵小班</option>
-                        <option>向日葵中班</option>
-                        <option>向日葵大班</option>
+                        <option>程式設計基礎班</option>
+                        <option>網頁開發講座</option>
+                        <option>程式設計進階班</option>
+                        <option>職涯規劃</option>
+                        <option>網頁設計</option>
+                        <option>多媒體應用</option>
+                        <option>資料庫管理</option>
+                        <option>網路行銷</option>
                     </select>
 
                 </div>
@@ -131,13 +135,13 @@
         </div>
     </div>
 
-    <div class="footer alert-info">
+    <div class="footer ">
         <p style="margin: auto;"><a
                 href="./about.html">關於我們</a>&nbsp;&nbsp;電話:02-23677468&nbsp;&nbsp;&nbsp;&nbsp;地址:台北市中正區永春街131巷2號之2</p>
     </div>
 
 
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 
     <!-- Optional JavaScript -->
@@ -151,6 +155,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
 </body>
 
 </html>
