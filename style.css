@@ -1,9 +1,10 @@
-.navstyle{
+.navstyle {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
+
 .active {
     background-color: #FF5C26!important;
     color: white !important;
@@ -22,34 +23,34 @@ li a {
     color: black;
     text-decoration: none;
 }
-  
+
 li a:hover {
-    background-color:#ffa443b0;
+    background-color: #ffa443b0;
     color: black;
     border-radius: 4px;
 }
 
-.footer{
+.footer {
     background-color: #f7bd52b9;
     padding: 10px;
     text-align: center;
     box-sizing: border-box;
     /* 設定footer絕對位置在底部 */
     /*position: absolute;*/
-    
     bottom: 0;
     /* 展開footer寬度 */
     width: 100%;
 }
-span{
+
+span {
     color: #FF5C26;
     font-weight: bolder;
     padding-right: 50px;
 }
-body{
+
+body {
     background-color: #f5eee5cc;
 }
-
 
 #myBtn {
     display: none;
@@ -60,13 +61,13 @@ body{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:#FF5C26;
+    background-color: #FF5C26;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
-  }
-  
-  #myBtn:hover {
+}
+
+#myBtn:hover {
     background-color: #555;
-  }
+}
